@@ -1,0 +1,52 @@
+/* style.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+#info {
+    font-family: Arial, sans-serif;
+    font-size: 4vw; /* Responsive font size */
+    margin-bottom: 10px;
+}
+
+canvas {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    border: 2px solid #333;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+    width: 80vw; /* Responsive width */
+    height: 80vw; /* Responsive height */
+    max-width: 400px; /* Max width for larger screens */
+    max-height: 400px; /* Max height for larger screens */
+}
+
+#controls {
+    margin-top: 10px;
+}
+
+#controls button {
+    padding: 5px 10px; /* Adjusted padding for smaller screens */
+    margin: 5px;
+    font-size: 3vw; /* Responsive font size for buttons */
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    #controls button {
+        font-size: 5vw; /* Larger font size for buttons on smaller screens */
+    }
+
+    #info {
+        font-size: 5vw; /* Larger font size for info on smaller screens */
+    }
+}
